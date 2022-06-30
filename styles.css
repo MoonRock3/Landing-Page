@@ -1,0 +1,260 @@
+* {
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  body {
+    font-family: "Oswald", sans-serif;
+    width: 1440px;
+    height: 2486px;
+  /* В макете изображение в блоке "HOME" выходит за пределы блока (обрезается), я сделал так же и теперь не могу адаптировать страницу без искажения этого изображения. Поэтому документ имеет фиксированную ширину, это не запрещено. */
+    background: #ffffff;
+  }
+  
+  .header {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .menu {
+    padding: 0px 80px;
+    height: 110px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .menu__logo {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 53px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+    margin: 29px 0px 28px 0px;
+  }
+  
+  .menu__ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin: 37px 0px;
+  }
+  
+  .menu__li {
+    margin: 0px 46px;
+  }
+  
+  .menu__link {
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    text-decoration: none;
+  }
+  
+  .menu__link:hover,
+  .card_title:hover {
+    text-decoration: underline;
+  }
+  
+  .home {
+    height: 622px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .home_text {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 89px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  
+  .home_line {
+    width: 80px;
+    height: 10px;
+    background: #817070;
+  }
+  
+  /* Кадрирование */
+  .home_image {
+    position: absolute;
+    z-index: -1;
+    width: 1442px;
+    height: 812px;
+    left: -2px;
+    top: -37px;
+  }
+  
+  .story {
+    height: 572px; /*632 вместе с padding*/
+    background: white;
+    padding: 60px 123px 0px 80px;
+  }
+  
+  .story_title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 53px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 0px 0px 60px 0px;
+  }
+  
+  .story_content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .story_img {
+    width: 600px;
+    height: 400px;
+  }
+  
+  .story_text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    margin: 0px 0px 0px 40px;
+  }
+  
+  .blog {
+    height: 586px; /*Вместе с padding 711px*/
+    background: #efefef;
+    padding: 60px 103px 65px 102px;
+  }
+  
+  .blog_title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 53px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 0px 0px 59px 0px;
+  }
+  
+  .blog_content {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .card {
+    width: 325px;
+    height: 408px;
+    background: #ffffff;
+    padding: 20px 20px 46px 20px;
+  }
+  
+  .card_title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    /*Выравнивать по центру нет смысла.*/
+  }
+  
+  .card_img {
+    width: 325px;
+    height: 216px;
+    margin: 24px 0px;
+  }
+  
+  .card_text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000000;
+  }
+  
+  .contact {
+    height: 219px;
+    background: #817070;
+    padding: 60px 0px 58px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .contact_title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 53px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+  
+  .contact_email {
+    width: 300px;
+    height: 55px;
+    background: #817070;
+    border: 3px solid #ffffff;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #ffffff;
+    margin: 28px 0px;
+  }
+  
+  .contact_email::placeholder {
+    font-family: "Oswald";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    color: #ffffff;
+    opacity: 0.9;
+  }
+  
+  .contact_email:focus {
+    outline: 0;
+  }
+  
+  .contact_button {
+    width: 129px;
+    height: 55px;
+    background: #ffffff;
+    border: 3px solid #ffffff;
+    font-family: "Oswald";
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #817070;
+  }
+  
+  .footer_text {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 29px 0px 14px 0px;
+  }
+  

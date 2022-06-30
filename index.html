@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="menu">
+      <!-- Просто "#" значит, что пока нет адреса для ссылки, т.к. это макет в codepen -->
+      <a href="#" class="menu__logo">Coffee house</a>
+      <ul class="menu__ul">
+        <li class="menu__li">
+          <a href="#home_block" class="menu__link">Home</a>
+        </li>
+        <li class="menu__li">
+          <a href="#story_block" class="menu__link">Story</a>
+        </li>
+        </li>
+        <li class="menu__li">
+          <a href="#blog_block" class="menu__link">Blog</a>
+        </li>
+        </li>
+        <li class="menu__li">
+          <a href="#contact_block" class="menu__link">Subscribe</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div id="home_block" class="home">
+      <h1 class="home_text">Take your time</h1>
+      <hr class="home_line">
+      <img class="home_image" src="https://source.unsplash.com/vSuQJKZkt4U/1920x1080" alt="Чашка кофе">
+    </div>
+    <div id="story_block" class="story">
+      <h2 class="story_title">Story</h2>
+      <div class="story_content">
+        <img class="story_img" src="https://source.unsplash.com/X4RJG4aNi8o/1920x1080" alt="Готовка кофе">
+        <p class="story_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean varius eget arcu quis cursus. Nunc id tortor imperdiet, vestibulum orci sed, gravida orci. Cras a enim ac elit eleifend euismod. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Praesent mattis ultrices est, congue ullamcorper erat bibendum pulvinar. In accumsan dapibus accumsan. Maecenas semper est ut nunc feugiat, vel ultrices ligula commodo. Donec eget pulvinar nunc, eget pharetra risus.</p>
+      </div>
+    </div>
+    <div id="blog_block" class="blog">
+      <h2 class="blog_title">Blog</h2>
+      <div class="blog_content">
+        <div class="card">
+          <a href="#" class="card_title">Daily Coffee News</a>
+          <img class="card_img" src="https://source.unsplash.com/CSQQ6_T0sks/1920x1080" alt="Кофе наливают в кружку">
+          <p class="card_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean varius eget arcu quis cursus. Nunc id tortor imperdiet, vestibulum orci sed, gravida orci. Cras a enim ac elit eleifend euismod.</p>
+        </div>
+        <div class="card">
+          <a href="#" class="card_title">Dutch Coffee Chains</a>
+          <img class="card_img" src="https://source.unsplash.com/TYIzeCiZ_60/1920x1080" alt="Заварка кофе">
+          <p class="card_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean varius eget arcu quis cursus. Nunc id tortor imperdiet, vestibulum orci sed, gravida orci. Cras a enim ac elit eleifend euismod.</p>
+        </div>
+        <div class="card">
+          <a href="#" class="card_title">Start Up In Minneapolis</a>
+          <img class="card_img" src="https://source.unsplash.com/9rTEwV_G0Do/1920x1080" alt="Кофемашина">
+          <p class="card_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean varius eget arcu quis cursus. Nunc id tortor imperdiet, vestibulum orci sed, gravida orci. Cras a enim ac elit eleifend euismod.</p>
+        </div>
+      </div>
+    </div>
+    <form action="">
+      <div id="contact_block" class="contact">
+        <label class="contact_title" for="email">Subscribe</label>
+        <input id="email" class="contact_email" type="email" placeholder="enter your email">
+        <button class="contact_button" type="submit">Submit</button>
+      </div>
+    </form>
+  </main>
+  <footer>
+    <h3 class="footer_text">© COPYRIGHT 2021</h3>
+  </footer>
+</body>
+
+</html>
